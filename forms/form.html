@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>forms</title>
+</head>
+<body>
+  <!-- for later
+     <h1>search enhanced by brave</h1>
+  <form action="https://search.brave.com/search" method="get">
+    <input type="search" name="q" id="q">
+    <button type="submit">brave search!</button>
+    <fieldset label="q">
+      <legend>search box(powered by brave)</legend>
+      <label for="q">enter search string</label>
+    </fieldset>
+  </form> -->
+
+  <h1>form</h1>
+  <form action="https://httpbin.org/get" method="get">
+   <fieldset>
+     <legend>personal info</legend>
+      <P>
+      <label for="firstName">first name:</label>
+      <input type="text" name="first-name" id="firstName" autofocus autocomplete="on" required placeholder="dora">
+      </P>
+      <p>
+      <label for="email">email</label>
+      <input type="email" name="email" id="email" placeholder="example@mail.com">
+      </p>
+      <p>
+        <label for="dob">date of birth</label>
+      <input type="date" name="dob" id="dob">
+      </p>
+      <p>
+      <label for="phoneNo">phone number:</label>
+      <input type="tel" name="phone-number" id="phoneNo" required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="5555-555-555">
+       </p>
+       <p>
+        <label for="password">enter password</label>
+        <input type="password" name="password" id="password">
+       </p>
+       <p>
+        <label for="favdec">favourate decade</label>
+        <input type="number" name="fav-decade" id="favdec" min="1900" max="2030" step="10" value="2020">
+       </p>
+       <p>
+        <label for="drink">fav-drink</label>
+        <select name="fav-drink" id="drink" multiple size="4">
+          <optgroup label="british induced">
+            <option value="coffee" selected>coffee</option>
+            <option value="tea" >tea</option>
+          </optgroup>
+          <optgroup label="desi medicine">
+            <option value="kadha">kadha</option>
+          </optgroup>
+          <optgroup label="soft-drinks">
+            <option value="pepsi">pepsi</option>
+            <option value="coca-cola">cocacola</option>
+            <option value="fizz">fizz</option>
+          </optgroup>
+          <option value="other">other</option>
+        </select>
+        <!-- same thing can be achieved by using input using lists-->
+       </p>
+       <p>
+        <label for="choosedrink">choose fav drink</label>
+        <input type="text" name="favdrink" id="choosedrink" list="drinks-list">
+        <datalist id="drinks-list">
+          <option value="coffee">coffee</option>
+          <option value="tea">tea</option>
+          <option value="juice">juice</option>
+          <option value="soft-drinks">soft-drinks</option>
+          <option value="lorem">lorem</option>
+          <option value="water">water</option>
+          <option value="other">other</option>
+        </datalist>
+       </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>choose type</legend>
+        <P>fav game</P>
+        <input type="radio" name="fav-game" id="cricket" value="cricket">
+        <label for="cricket">cricket</label>
+        <input type="radio" name="fav-game" id="hockey" value="hockey">
+        <label for="hockey">hockey</label>
+        <input type="radio" name="fav-game" id="badminton" value="badminton">
+        <label for="badminton">badminton</label>
+        <input type="radio" name="fav-game" id="football" value="football">
+        <label for="football">football</label>
+        <input type="radio" name="fav-game" id="other" value="other">
+        <label for="other">others</label>
+          <div>fav-person</div>
+          <input type="checkbox" name="fav-person" id="person1" value="elon">
+          <label for="person1">elon</label>
+          <input type="checkbox" name="fav-person" id="person2" value="bill">
+          <label for="person2">bill</label>
+          <input type="checkbox" name="fav-person" id="person3" value="idon'tknow">
+          <label for="person2">idon'tknow</label>
+          <input type="checkbox" name="fav-person" id="person4" value="lorem">
+          <label for="person4">lorem</label>
+          <input type="checkbox" name="fav-person" id="person5" value="other">
+          <label for="person5">other</label>
+      </fieldset>
+      <fieldset>
+        <label for="letsknow">let's know</label>
+        <textarea name="message" id="letsknow" cols="30" rows="10" placeholder="this is placeholder">if not this value</textarea>
+      </fieldset>
+      <hr>
+      <input type="submit" value="submitget"> <!--only text is allowed in value-->
+      <button type="submit">submitbutton!</button>
+      <button type="reset">reset</button>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">submitpost</button>
+      <!--through post method url donot reveal input infos-->
+      
+  </form>
+  
+</body>
+</html>

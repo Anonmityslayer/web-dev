@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button{
+  position: fixed;
+  top: 100px;
+  height: 3rem;
+  font: inherit;
+}
+
+section{
+  height: 100vh;
+  text-align: center;
+}
+
+header{
+  background-color: red;
+  color: black;
+  position: sticky;
+  top: 0;
+}
+
+h2{
+  text-align: left;
+}
+
+footer{
+  font-size: 3rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  
+  /*when fixed is used width need to be set to 100%*/
+  position: sticky;
+  bottom: 0;
+  bottom: 0;
+}

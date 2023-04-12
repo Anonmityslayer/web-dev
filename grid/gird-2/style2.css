@@ -1,0 +1,18 @@
+/*only box designpart */
+
+header{
+  background-color: blue;
+  height: 100px;
+}
+
+.main {
+  background-color: red;
+}
+
+.sidebar{
+  background-color: green;
+}
+
+.footer{
+  background-color: yellow;
+}

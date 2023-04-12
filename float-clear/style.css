@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
+*{
+  margin: 0;
+  padding 0;
+  box-sizing: border-box;
+}
+
+body{
+  diplay: flow-root;
+}
+
+div{
+  /*making square to immitate image*/
+  width: 20vw;
+  height: 20vw;
+  background-color: black;
+  border: 2px solid red;
+  border-radius: 2rem;
+}
+
+.left{
+  float: left;
+  margin-right: 1rem;
+}
+
+section{
+  border: 2px solid red;
+  /* overflow: auto;
+  /*or*/
+  display: flow-root;
+  border-radius: 2rem;
+}
+
+p.rec{
+  text-align: justify;
+}
+
+div .clear{
+  clear: both;
+}
+.right{
+  float: right;
+}
+
+.lear{
+  clear: both;
+}

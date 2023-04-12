@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta property="og:title" content="my html site"/>
+        <meta property="og:type" content="tag list site"/>
+    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/"/>
+    <meta property="og:image" content="https://imgs.search.brave.com/XacRnRRN_vvnnso-Uv1JK4qufkjfNET5P_tZPW-BqnY/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2U0/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5G/XzJiSm90V1BIOGVm/dVZ0emxEbkZRSGFF/SyZwaWQ9QXBp"/>
+    <meta property="og:site_name" content="MYsite"/>
+    <meta property="og:description"
+          content="Lorem ipsum dolor sit amet consectetur."/>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <span id="index"><a href="index.html">home</a></span>
+                <span id="form"><a href="form.html">form-page</a></span>
+                <span id="footer"><a href="#footer">bottom</a></span>
+            </nav>
+        </header>
+        <h1>top most heading</h1>
+        <p>intro to topic - Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero similique eaque tenetur temporibus inventore odit earum delectus odio eos non!</p>
+        <h2>sub heading</h2>
+        <P>this is praragraph <mark>this is marked text</mark></P>
+        <p><strong>this indicted text has more importance then sorrounding text</strong>
+        <pre>
+            <code>
+                #include &lt;stdio.h&gt;
+                int main(void){
+                    //this code will be printed as written in source code;
+                    //also have sementic meaning of being a computer code;
+                }
+            </code>
+        </pre>
+        <b>this is just bold text</b> <br> <i>this is just italic text</i>
+        <em>sementic more stress to this text</em>
+        you <em>should/must</em> go there.
+        <br>
+        &lt;u&gt; is used to underline <u>mispled </u> text or chinese proper names but not for any textual annotations.
+        <ins>this line is inserted</ins>
+        <del>this line is deleted</del>
+        <s>this is struck</s> <br>
+        yo boy this is subscript <sub>example</sub>  yo boy this is superscript <sup>example</sup>
+        <br>
+        full form of <abbr title="HyperText Markup Language">HTML</abbr> <sub>need to hover to see text</sub>
+
+        <br> <hr>
+        <ol reversed start="5" type="I">
+            <li>item1</li>
+            <li>item2</li>
+                <ul>
+                    <li>item1.1</li>
+                    <li>item1.2</li>
+                    <li>item1.3</li>
+                </ul>
+            <li>item3</li>
+            <li value="2">item2(nw)</li>
+            <li>item4</li>
+        </ol>
+
+        <a href="https://search.brave.com" title="link to brave search engine">open brave search!</a>
+        <a href="https://releases.ubuntu.com/22.04.2/ubuntu-22.04.2-desktop-amd64.iso" title="download ubuntu iso file" download="ubuntu-latest-iso-file">ubuntu iso (above 4GB)</a>
+    </p>
+
+    <hr>
+    <p>this is an example for discription list</p>
+    <dl>
+        <dt>Lorem</dt>
+        <dd>discription Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi doloremque quod in eaque cumque laborum fugiat voluptates minus vero. Quam maiores provident fugit modi voluptas?</dd>
+        <dt>lorem2</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus dicta iste tempora suscipit nostrum, amet, voluptas maxime pariatur voluptatibus facilis inventore culpa recusandae quos asperiores dolores repellat officia eveniet. Nulla, dolor.</dd>
+        <dt>lorem3</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, error pariatur, autem incidunt ut repellendus rerum rem accusantium, animi minus perspiciatis ducimus?</dd>
+    </dl>
+
+    <hr>
+    exmple for block quotes
+    <P>someone said</P><blockquote cite="url of source">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eveniet quos corrupti<code>&lt;blockquote&gt;</code> alias neque animi minima incidunt architecto, aspernatur id voluptatum veniam harum.</blockquote>
+    </body>
+    <P>example for inline quotes that don't need paragraph beeaks</P>
+    <p>someone said <q>how are they travelling thsi text will be enclosed in "" marks due to use of &lt;q&gt; element</q></p>
+
+    <address>address element is used to provide address of the body or article or content of page address - Lorem, ipsum dolor.<p>Lorem, ipsum.</p></address>
+
+    <!-- code -->
+    <pre>
+        <code>#include &lt;stdio.h&gt;
+              
+               int main(){
+                int <var>a</var>;
+               }
+
+               press <kbd>Enter</kbd> from keyboard
+        </code>
+        <code><pre><kbd>ping search.brave.com</kbd>
+        <samp>
+            Pinging search.brave.com [52.85.234.72] with 32 bytes of data:
+            Reply from 52.85.234.72: bytes=32 time=17ms TTL=245
+            Reply from 52.85.234.72: bytes=32 time=41ms TTL=245
+            Reply from 52.85.234.72: bytes=32 time=298ms TTL=245
+            Reply from 52.85.234.72: bytes=32 time=56ms TTL=245
+            
+            Ping statistics for 52.85.234.72:
+                Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+            Approximate round trip times in milli-seconds:
+                Minimum = 17ms, Maximum = 298ms, Average = 103ms</samp> </pre></code>
+    </pre>
+
+    <time datetime="2019-09-31T04:45:01.678+01:30">this gives machine an info - <q>04:45:01.678, 31 sept 2019 is 06:15:01 in france (all such info can be used for developing tools with with we can scrap all date and time)</q></time>
+    <hr>
+    <footer id="footer">
+        <address>made with &#57378; &copy; &#10084; &#65039;
+            Hexadecimal HTML Entity--&#x2764; &#xfe0f;by <a href="https://www.twitter.com/atiwarycodes">anand</a></address>
+        give <a href="form.html">feedback form</a>
+    </footer>
+</html>

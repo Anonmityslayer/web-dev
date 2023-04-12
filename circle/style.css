@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-height: 100vh;
+  background-color: papayawhip;
+}
+
+body .circle{
+  background-color: yellow;
+  border: 2px solid red;width: 300px;
+  height: 300px;
+  outline: 2px solid green;
+  margin: 3em auto;
+  outline-offset: 5px;
+  border-radius: 150px;
+  background-image: url('https://placekitten.com/g/200/300');
+}
+
+
+a{
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+  display: block;
+}
+li{
+  display: inline-block;
+}
+
+a:hover{
+  background-color: blueviolet;
+  color: red;
+}
+a:visited{
+  color: green;
+}
+
+.square {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 3em auto;
+  border: 5px solid blue;
+  border-top-width: 10px;
+  border-style: double;
+  outline: 2px solid green;
+  outline-offset: 20px;
+}
+
+
+  

@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+section{
+  height: 100vh;
+  text-align: center;
+}
+
+h2{
+  position: sticky;
+  background-color: red;
+  color: white;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  font-size: medium;
+}
